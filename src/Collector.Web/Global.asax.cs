@@ -7,6 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
+using Collector.Common;
 
 namespace Collector.Web
 {
@@ -17,7 +18,9 @@ namespace Collector.Web
             // Code that runs on application startup
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);            
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            LogHelper.LogConfig(Server.MapPath(@"~\App_Data\log4net.config"));
         }
     }
 }

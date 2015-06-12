@@ -134,6 +134,7 @@
   <ItemGroup>
     <None Include="App_Data\appsettings.config" />
     <Content Include="Global.asax" />
+    <Content Include="App_Data\log4net.config" />
     <None Include="Properties\PublishProfiles\collector.pubxml" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
