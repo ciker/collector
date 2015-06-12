@@ -16,7 +16,8 @@ namespace Collector.BusinessLogic
             data = baseData;
         }
 
-        
+        public BaseLogic()
+        { }
 
         public bool IsNew(T item)
         {

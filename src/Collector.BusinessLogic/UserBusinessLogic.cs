@@ -10,13 +10,19 @@ namespace Collector.BusinessLogic
 {
     public class UserBusinessLogic:BaseLogic<T_User>
     {
-        private readonly UserData userData;
         public UserBusinessLogic(UserData userData) :
             base(userData)
         {
-            userData = ((UserData)this.data);
+           
+        }
+
+        private UserData Data()
+        {
+            return ((UserData)this.data);
         }
 
         
+
+
     }
 }

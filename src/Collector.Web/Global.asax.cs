@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
 using Collector.Common;
+using Collector.Web.Helper;
 
 namespace Collector.Web
 {
@@ -21,6 +22,7 @@ namespace Collector.Web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             LogHelper.LogConfig(Server.MapPath(@"~\App_Data\log4net.config"));
+            DependencyResolver.SetResolver(new NInjectDepend());
         }
     }
 }
