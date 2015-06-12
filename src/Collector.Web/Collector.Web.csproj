@@ -119,6 +119,24 @@
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Collector.BusinessLogic\Collector.BusinessLogic.csproj">
+      <Project>{d64ccb44-2cd5-46a2-977c-a88ebcbc60ab}</Project>
+      <Name>Collector.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Collector.Caching\Collector.Caching.csproj">
+      <Project>{de8612e8-d172-403c-80b9-43622c762419}</Project>
+      <Name>Collector.Caching</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Collector.Common\Collector.Common.csproj">
+      <Project>{422ad0a6-f0bc-47fa-a84a-7140866d9451}</Project>
+      <Name>Collector.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Collector.Model\Collector.Model.csproj">
+      <Project>{e5ab8a03-ba68-4a1a-b81c-9eaa16441610}</Project>
+      <Name>Collector.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
