@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace Collector.Web.Controllers
 {
-    public class HomeController : BaseController
+    public class BaseController : Controller
     {
-        // GET: Home
+        // GET: Base
         public ActionResult Index()
         {
             return View();
