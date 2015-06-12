@@ -11,6 +11,7 @@ namespace Collector.Web.Controllers
         // GET: Home
         public ActionResult Index()
         {
+
             return View();
         }
     }
